@@ -1,0 +1,391 @@
+"424003","du"
++COPN: "424002","ETISALAT"
++COPN: "722310","CLARO ARGENTINA"
++COPN: "722341","AR PERSONAL"
++COPN: "722010","Movistar"
++COPN: "722007","Movistar"
++COPN: "283001","Beeline AM"
++COPN: "283005","MTS ARM"
++COPN: "283010","Orange AM"
++COPN: "544110","Bluesky Communications"
++COPN: "344030","APUA imobile"
++COPN: "344930","Cingular"
++COPN: "344920","LIME"
++COPN: "505002","YES OPTUS"
++COPN: "505001","Telstra Mobile"
++COPN: "505006","3TELSTRA"
++COPN: "505003","vodafone AU"
++COPN: "232001","A1"
+
+ A"
+
++COPN: "232007","telerin5","BG GLOBUL"
++COPN: "284TIM BRASIL"
++COPN: "724002","T "302490","WIND"
++COPN: "COPN: "612004","KoZ"
++COPN: "712001","I.C.E."
++COP370002","CLARO DOM"
++CO
++COPN: "542002","DIGICEL"
++COPN: "CELL"
++COPN: "607003","GM : "454018","CSL"
++COPN: "45401510008","AXIS"
++COPN: "4058llOne"
++COPN: "404058","CellOne"
++COPN:OPN: "404019","IDEA"
++5873","IN Loop"
++COPN: "405860
++COPN: "405001","Relian,"TATA DOCOMO"
++COPN: "4050OPN: "405842","VIDEOCON"
++COPN: "4e IN"
++COPN: "405751","Vodafon74011","NOVA IS"
++COPN: "27
++COPN: "401002","KZ KCELL"
+
+
++COPN: "457001","LAO GSM"
++UXGSM"
++COPN: "270077","L 
++COPN: "294001","T-Mobile MK"","MTML"
+
++COPN: "650010","CELTEL MW"
++ll"
++COPN: "530005","Telecom NZ
++COPN: "537003","DIGICEL"
++COPN"Mobily-KSA"
++COPN: "420004"7004","SOMAFONE"
++COPN: "637020", "240004","SWEDEN"
++COPN: "UE 3G+"
++COPN: "520015","TOT3G
+
++COPN: "466089","VIBO
+
++COOPN: "310470","USA DOCOMO PACIFIC"
++COPprint"
++COPN: "310210",,"Verizon"
++COPN: "310890","Verizon655010","MTN-SA"
++COPN: "6550
+[ AT+COPS=? ]
++CIEV: 2,3
+
++COPS: (2,"TRUE 3G+","TRUE 3G+","52004",2),(1,"AIS 3G","AIS 3G","52003",2),(1,"TOT3G","TOT3G","52015",2),(1,"dtac TriNet","dtac","52005",2),(3,"TH GSM","TH GSM","52001",0),(1,"TRUE","TRUE","52099",0),(1,"TH-DTAC","DTAC","52018",0),,(0-5),(0-2)
+[ AT+COPS=5 ]
++CIEV: 2,4
+
+Scan incomplete! Power cycle the modem and try again.
+Turning on the modem: OK!
+Getting signal strength: RSSI: -69dBm, QUAL: 37dB, BARS: 3
+Get the SIM card ID (ICCID): 8966005115904868614
+
+Scanning for available networks, could take up to 3 minutes...
+
+
+[ AT+COPN ]
++CIEV: 2,3
++COPN: "363020","DIGICEL"
++COPN: "363001","SETAR GSM"
++COPN: "412001","AF AWCC"
++COPN: "412050","Etisalat Af"
++COPN: "412040","MTN AF"
++COPN: "412020","ROSHAN"
++COPN: "631002","UNITEL"
++COPN: "365840","LIME"
++COPN: "276001","AMC - AL"
++COPN: "276003","EAGLE AL"
++COPN: "276004","PLUS AL"
++COPN: "276002","Vodafone AL"
++COPN: "213003","MOBILAND"
++COPN: "362069","ANT CURACAO TELECOM GSM"
++COPN: "362091","ANT"
++COPN: "362051","Telcell GSM"
++COPN: "424003","du"
++COPN: "424002","ETISALAT"
++COPN: "722310","CLARO ARGENTINA"
++COPN: "722341","AR PERSONAL"
++COPN: "722010","Movistar"
++COPN: "722007","Movistar"
++COPN: "283001","Beeline AM"
++COPN: "283005","MTS ARM"
++COPN: "283010","Orange AM"
++COPN: "544110","Bluesky Communications"
++COPN: "344030","APUA imobile"
++COPN: "344930","Cingular"
++COPN: "344920","LIME"
++COPN: "505002","YES OPTUS"
++COPN: "505001","Telstra Mobile"
++COPN: "505006","3TELSTRA"
++COPN: "505003","vodafone AU"
++COPN: "232001","A1"
+
+
+
++COPN: "232007","telering"
++COPN: "28400
++COPN: "724003","TIM BRASIL"
+
+02490","WIND"
+
++COPN: "302PN: "612004","KoZ"
++COPN: "712001","I.C.E."
++COPN:0002","CLARO DOM"
++COPN244091","FI SONERA"
++COPN: 4032","EE"
++COPN: "234020",OPN: "607002","AFRICELL"
++"454018","CSL"
++COPN: "454010"0008","AXIS"
++COPN: "405802COPN: "404066","CellOne"
++COPN: "404058",": "404019","IDEA"
++COP873","IN Loop"
++COPN: "405860"5006","Reliance"
++COP
++COPN: "405042","TATA DOCON: "405842","VIDEOCON"
++COPN: "405IN"
++COPN: "405751","Vodafone king"
++COPN: "274011","NOVAOPN: "401002","KZ KCELL"
++CCOPN: "457001","LAO GSM"
++COPSM"
++COPN: "270077","L TANCOPN: "294001","T-Mobile MK"
+
+MTML"
+
++COPN: "650010","CELTEL MW"
++COPOPN: "429002","Ncell"
++COPN: "57001","PNGBMobile"
++COPN: "","RO COSMOTE"
++COPN: "
++COPN: "420003","Mobily-KSA"
+lis"
+
++COPN: "637004","SOMAFONE"
+240004","SWEDEN"
+
++COPN: "24 3G+"
++COPN: "520015","TOT3G"
++COPN: "466089","VIBO"
++C: "310080","Corr Wireless"
++COPN: "31150
+
++COPN: "310320","USA - CellularOne"
+
++COP"
++COPN: "3600 "421001","SabaFon"
+[ AT+COPS=? ]
++COPN: "65
++COPS: (2,"TRUE 3G+","TRUE 3G+","52004",2),(1,"TOT3G","TOT3G","52015",2),(1,"AIS 3G","AIS 3G","52003",2),(1,"dtac TriNet","dtac","52005",2),(3,"TH GSM","TH GSM","52001",0),(1,"TRUE","TRUE","52099",0),(1,"TH-DTAC","DTAC","52018",0),,(0-5),(0-2)
+
+[ AT+COPS=5 ]
+
+Scan incomplete! Power cycle the modem and try again.
+Turning on the modem: OK!
+Getting signal strength: RSSI: -79dBm, QUAL: 37dB, BARS: 3
+Get the SIM card ID (ICCID): 8966005115904868614
+
+You will be prompted to enter your APN, USERNAME and PASSWORD.
+Most 3rd-Party SIMs don't require USERNAME and PASSWORD so just
+press ENTER on those to set them as empty values.
+Pressing ENTER on all 3 will restore Particle's APN.
+
+APN: internet
+USERNAME: 
+true
+PASSWORD: 
+true
+
+Credentials Set!
+Connecting to the cellular network with 3rd-Party APN: OK!
+Scanning for available networks, could take up to 3 minutes...
+
+
+[ AT+COPN ]
++CIEV: 2,2
++COPN: "363020","DIGICEL"
++COPN: "363001","SETAR GSM"
++COPN: "412001","AF AWCC"
++COPN: "412050","Etisalat Af"
++COPN: "412040","MTN AF"
++COPN: "412020","ROSHAN"
++COPN: "631002","UNITEL"
++COPN: "365840","LIME"
++COPN: "276001","AMC - AL"
++COPN: "276003","EAGLE AL"
++COPN: "276004","PLUS AL"
++COPN: "276002","Vodafone AL"
++COPN: "213003","MOBILAND"
++COPN: "362069","ANT CURACAO TELECOM GSM"
++COPN: "362091","ANT"
++COPN: "362051","Telcell GSM"
++COPN: "424003","du"
++COPN: "424002","ETISALAT"
++COPN: "722310","CLARO ARGENTINA"
++COPN: "722341","AR PERSONAL"
++COPN: "722010","Movistar"
++COPN: "722007","Movistar"
++COPN: "283001","Beeline AM"
++COPN: "283005","MTS ARM"
++COPN: "283010","Orange AM"
++COPN: "544110","Bluesky Communications"
++COPN: "344030","APUA imobile"
++COPN: "344930","Cingular"
++COPN: "344920","LIME"
++COPN: "505002","YES OPTUS"
++COPN: "505001","Telstra Mobile"
++COPN: "505006","3TELSTRA"
++COPN: "505003","vodafone AU"
++COPN: "232001","A1"
+
+-Mobile A"
+
++COPN: "232007"," "284005","BG GLOBUL"
++COP4003","TIM BRASIL"
++COPN: "724+COPN: "302490","WIND"
++C"
++COPN: "612004","KoZ"
+
+
++COPN: "712001","I.C.E."
++COPN: "234020","3 UK"
++C,"AFRICELL"
++COPN: "607003
++COPN: "454018","CSL"
++COP+COPN: "510008","AXIS"
++COPllOne"
++COPN: "404066","CellOne"
++COPN:A"
++COPN: "404019","IDCOPN: "405873","IN Loop"
++COPNance"
++COPN: "405001" "405042","TATA DOCOMO"
++COON"
++COPN: "405842","VIDEOCON"
+
+,"Vodafone IN"
+
++COPN: "405751"74004","Viking"
++COPN: "274 KZ"
++COPN: "401002","KZ KCANIYA"
++COPN: "457001","LAO G01","L LUXGSM"
++COPN: "270NE MK"
++COPN: "294001","T-Mo "617003","MTML"
++COPN: "650010","CELTEL 2","Ncell"
++COPN: "530005","TelBMobile"
++COPN: "537003","DPN: "226003","RO COSMOTE"
++COPN: "420003","MoOPN: "637004","SOMAFONE"
++COPN: "
++COPN: "240004","SWEDEN"
+04","TRUE 3G+"
+
++COPN: "520015"Mobile"
++COPN: "46608digm"
++COP "311370","GCI"
++COPN: "310190","USA Du "310250","T-Mobile"
++CN: "310400","USA  iCAN"
++COPN: "31 "65500
+[ AT+COPS=? ]
++CIEV: 2,3
+
++COPS: (2,"TRUE 3G+","TRUE 3G+","52004",2),(1,"AIS 3G","AIS 3G","52003",2),(1,"TOT3G","TOT3G","52015",2),(1,"dtac TriNet","dtac","52005",2),(3,"TH GSM","TH GSM","52001",0),(1,"TRUE","TRUE","52099",0),(1,"TH-DTAC","DTAC","52018",0),,(0-5),(0-2)
+[ AT+COPS=5 ]
++CIEV: 2,4
++CIEV: 2,3
++CIEV: 2,4
++CIEV: 2,3
+
+Scan incomplete! Power cycle the modem and try again.
+Turning on the modem: OK!
+Getting signal strength: RSSI: -69dBm, QUAL: 43dB, BARS: 3
+Get the SIM card ID (ICCID): 8966005115904868614
+
+Scanning for available networks, could take up to 3 minutes...
+
+
+[ AT+COPN ]
++COPN: "363020","DIGICEL"
++COPN: "363001","SETAR GSM"
++COPN: "412001","AF AWCC"
++COPN: "412050","Etisalat Af"
++COPN: "412040","MTN AF"
++COPN: "412020","ROSHAN"
++COPN: "631002","UNITEL"
++COPN: "365840","LIME"
++COPN: "276001","AMC - AL"
++COPN: "276003","EAGLE AL"
++COPN: "276004","PLUS AL"
++COPN: "276002","Vodafone AL"
++COPN: "213003","MOBILAND"
++COPN: "362069","ANT CURACAO TELECOM GSM"
++COPN: "362091","ANT"
++COPN: "362051","Telcell GSM"
++COPN: "424003","du"
++COPN: "424002","ETISALAT"
++COPN: "722310","CLARO ARGENTINA"
++COPN: "722341","AR PERSONAL"
++COPN: "722010","Movistar"
++COPN: "722007","Movistar"
++COPN: "283001","Beeline AM"
++COPN: "283005","MTS ARM"
++COPN: "283010","Orange AM"
++COPN: "544110","Bluesky Communications"
++COPN: "344030","APUA imobile"
++COPN: "344930","Cingular"
++COPN: "344920","LIME"
++COPN: "505002","YES OPTUS"
++COPN: "505001","Telstra Mobile"
++COPN: "505006","3TELSTRA"
++COPN: "505003","vodafone AU"
++COPN: "232001","A1"
++COPN: "232012","A1"
++COPN: "232010","3 AT"
++COPN: "2COPN: "470001","Grameenphone"
+
+PN: "724039","Nextel Brasil 
++COPN: "302610","Bell"
+
+"Movistar"
+
++COPN: "730008N: "732123","Movistar"
+
+: "238001","TDC Mobil"
+
++COP014","FI AMT"
++COPN: "2440101014","AeroMobile"
++COPN:N"
++COPN: "611005","GINCL"
+
+54013","China Mobile HK"
+
++C510089","3"
++COPN: "510021","IND INDOSAT"
++COPN: "404071","CellOCOPN: "404095","IND airtel"
++C"405863","IN Loop"
++CCOPN: "404009","Reliance"
++DOCOMO"
++COPN: "405030","TATA DOCO43","VIDEOCON"
++COPN: "405842""404013","Vodafone IN"
++COP"418020","zain IQ"
++COPN: "
++COPN: "440010","JP DOCOMO"
++COPN: N: "246001","OMNITEL LT"
++CO90","Nextel 3G"
++COPN: "334003","movistar
+
++COPN: "502013","MY CELCOM 3G"
+","Mobile Norway"
+
++COPN: "2"515002","Globe Telecom-PHo"
++COPN: "427002","vodafone"635014","RWAAR"
++COPN: "635010",: "292001","SMT"
++COPN: "63N: "293040","Si.mobil"
++COPN: 800"
++COPN: "520005",,"VODAFONE TR"
++COPN:"
++COPN: "255007","TriM190","USA Dutch Harbor"
++COPN: "311680"COPN: "310250","T-Mobile"
++N: "310340","WestLink"
+[ AT+COPS=? ]
+
+02","MTN"
+
++
+[ AT+COPS=5 ]
++CIEV: 2,3
+
+Scan incomplete! Power cycle the modem and try again.

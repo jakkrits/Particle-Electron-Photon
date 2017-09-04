@@ -1,0 +1,76 @@
+/**********************************
+
+
+M2M
+89340 76500 00269 176 4
+
+
+**********************************/
+
+
+
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Running in SEMI_AUTOMATIC mode, cellular modem is OFF at boot,
+not connected to the cellular network or cloud.
+System RGB LED will typically stay White, until connecting to cloud.
+Connect a serial to USB adapter on the TX pin to see debugging output.
+Suggested workflow: o, d, r, p, P, p, C, s, s, z
+
+Press a key to run a command:
+[o] turn the cellular modem ON
+[d|D] cellular data connection (Particle SIM|3rd Party SIM)
+[n] scan the cellular network for operators
+[r] get the RSSI and QUAL values
+[P|p] send ping to www.bing.com|Google DNS 8.8.8.8
+[C|c] to connect|disconnect the cloud
+[s] publish a "b" event name and "count++" data
+[i] read the SIM ICCID
+[z] turn off the cellular modem, and go to deep sleep
+[K|k] enable|disable Serial1 debugging loopback
+[h] show this help menu
+
+Turning on the modem: ERROR!
+Failure powering on the modem!
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Press ENTER
+Running in SEMI_AUTOMATIC mode, cellular modem is OFF at boot,
+not connected to the cellular network or cloud.
+System RGB LED will typically stay White, until connecting to cloud.
+Connect a serial to USB adapter on the TX pin to see debugging output.
+Suggested workflow: o, d, r, p, P, p, C, s, s, z
+
+Press a key to run a command:
+[o] turn the cellular modem ON
+[d|D] cellular data connection (Particle SIM|3rd Party SIM)
+[n] scan the cellular network for operators
+[r] get the RSSI and QUAL values
+[P|p] send ping to www.bing.com|Google DNS 8.8.8.8
+[C|c] to connect|disconnect the cloud
+[s] publish a "b" event name and "count++" data
+[i] read the SIM ICCID
+[z] turn off the cellular modem, and go to deep sleep
+[K|k] enable|disable Serial1 debugging loopback
+[h] show this help menu
+
+Turning on the modem: ERROR!
+Failure powering on the modem!

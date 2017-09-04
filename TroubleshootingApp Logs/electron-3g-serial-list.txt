@@ -1,0 +1,403 @@
+Opening serial monitor for com port: "/dev/cu.usbmodem1411"
+ +   16 "\r\n+USOST: 0,58\r\n"
+    18.979 AT read OK    6 "\r\nOK\r\n"
+0000034703:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 29
+4002000cb168ff000a00020000000a000c410033000b51343136333035
+0000034723:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 58
+socketSendTo(0,52.90.134.114,5684,,58)
+    34.737 AT send      36 "AT+USOST=0,\"52.90.134.114\",5684,58\r\n"
+    35.094 AT read  >    3 "\r\n@"
+    35.147 AT send      58 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00!\x00-\x00\x01\x00\x00\x00\x00\x00!A\x88\\\xe6,m\xed\xabQj\xbb\xde\xe9f\x85\x10Y\xd0\\a\x95\x1a\x12\xa5]c\x14\xd0Z\xd5J\n\xf6\x1ap\x87)"
+    35.308 AT read  +   16 "\r\n+USOST: 0,58\r\n"
+    35.323 AT read OK    6 "\r\nOK\r\n"
+0000066707:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::command(particle::p...session command: 0
+0000066721:ERROR: int particle::protocol::Protocol::begin() (236):Hanshake: could not send hello message: 10
+0000066732:WARN : void handle_cloud_connection(bool) (267):Cloud handshake failed, code=10
+0000066992:INFO : void cloud_disconnect(bool) (421):Cloud: disconnecting
+0000066999:DEBUG: int Spark_Disconnect() (905):Close Attempt
+socketClose(0)
+    67.007 AT send      12 "AT+USOCL=0\r\n"
+    68.532 AT read OK    6 "\r\nOK\r\n"
+socketFree(0)
+0000068537:DEBUG: int Spark_Disconnect() (907):socket_close()=success
+0000068545:INFO : void cloud_disconnect(bool) (434):Cloud: disconnected
+0000068552:INFO : void establish_cloud_connection() (213):Cloud: connecting
+0000068560:DEBUG: int Spark_Connect() (827):sparkSocket Now =-1
+0000068566:DEBUG: int Spark_Connect() (846):HAL_FLASH_Read_ServerAddress() = type:1,domain:$id.udp.particle.io,ip: 46.100.105.36, port: 65535
+    68.581 AT send      56 "AT+UDNSRN=0,\"410033000b51343136333035.udp.particle.io\"\r\n"
+    71.701 AT read  +   29 "\r\n+UDNSRN: \"54.174.105.178\"\r\n"
+    71.718 AT read OK    6 "\r\nOK\r\n"
+0000071723:INFO : int determine_connection_address(IPAddress&, uint16_t&, ServerAddress&, bool) (796):Resolved host 410033000b51343136333035.udp.particle.io to 54.174.105.178
+socketSocket(UDP)
+    71.742 AT send      18 "AT+USOCR=17,5684\r\n"
+    71.758 AT read  +   13 "\r\n+USOCR: 0\r\n"
+    71.773 AT read OK    6 "\r\nOK\r\n"
+Socket 0: handle 0 was created
+0000071780:DEBUG: int Spark_Connect() (857):socketed udp=1, sparkSocket=0, 1
+0000071788:DEBUG: int Spark_Connect() (867):connection attempt to 54.174.105.178:5684
+0000071797:INFO : void establish_cloud_connection() (220):Cloud socket connected
+0000071805:DEBUG: int Spark_Handshake(bool) (539):starting handshake announce=0
+0000071815:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 107
+socketSendTo(0,54.174.105.178,5684,,107)
+    71.829 AT send      38 "AT+USOST=0,\"54.174.105.178\",5684,107\r\n"
+    71.847 AT read  >    3 "\r\n@"
+    71.900 AT send     107 "\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x00\x00^\x01\x00\x00R\x00\x00\x00\x00\x00\x00\x00R\xfe\xfd\xe9\xb4\x81&\x9b0|\x8cQ\x0f\xea\x80\x8e\xc3O\x9e\x10((@\x87\xe9e\xe8\xa5\xa5\x97^\xa6n=\xc0\x00\x00\x00\x04\xc0\xae\x00\xff\x01\x00\x00$\x00\r\x00\x06\x00\x04\x04\x03\x03\x03\x00\n\x00\x04\x00\x02\x00\x17\x00\v\x00\x02\x01\x00\x00\x13\x00\x02\x01\x02\x00\x14\x00\x02\x01\x02"
+    72.082 AT read  +   17 "\r\n+USOST: 0,107\r\n"
+    72.097 AT read OK    6 "\r\nOK\r\n"
+    72.331 AT read  +   17 "\r\n+UUSORD: 0,60\r\n"
+Socket 0: handle 0 has 60 bytes pending
+    72.350 AT send      16 "AT+USORF=0,813\r\n"
+    72.375 AT read  +   99 "\r\n+USORF: 0,\"54.174.105.178\",5684,60,\"\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x00\x00/\x03\x00\x00#\x00\x00\x00\x00\x00\x00\x00#\xfe\xfd V\xfb\xcd\xa8e\xb2\x1db\x8d<\xa7f\x88'K\xc2\xb4[\xcd\xc1$}\xf9\xbc2\xd9\x9akj\xca\xae1\""
+    72.412 AT read OK    6 "\r\nOK\r\n"
+0000072416:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 60
+0000072425:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 139
+socketSendTo(0,54.174.105.178,5684,,139)
+    72.439 AT send      38 "AT+USOST=0,\"54.174.105.178\",5684,139\r\n"
+    72.457 AT read  >    3 "\r\n@"
+    72.510 AT send     139 "\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x01\x00~\x01\x00\x00r\x00\x01\x00\x00\x00\x00\x00r\xfe\xfd\xe9\xb4\x81&\x9b0|\x8cQ\x0f\xea\x80\x8e\xc3O\x9e\x10((@\x87\xe9e\xe8\xa5\xa5\x97^\xa6n=\xc0\x00 V\xfb\xcd\xa8e\xb2\x1db\x8d<\xa7f\x88'K\xc2\xb4[\xcd\xc1$}\xf9\xbc2\xd9\x9akj\xca\xae1\x00\x04\xc0\xae\x00\xff\x01\x00\x00$\x00\r\x00\x06\x00\x04\x04\x03\x03\x03\x00\n\x00\x04\x00\x02\x00\x17\x00\v\x00\x02\x01\x00\x00\x13\x00\x02\x01\x02\x00\x14\x00\x02\x01\x02"
+    72.711 AT read  +   17 "\r\n+USOST: 0,139\r\n"
+    72.726 AT read OK    6 "\r\nOK\r\n"
+    72.960 AT read  +   18 "\r\n+UUSORD: 0,345\r\n"
+Socket 0: handle 0 has 345 bytes pending
+    72.980 AT send      16 "AT+USORF=0,813\r\n"
+    73.005 AT read  +  158 "\r\n+USORF: 0,\"54.174.105.178\",5684,118,\"\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x01\x00i\x02\x00\x00]\x00\x01\x00\x00\x00\x00\x00]\xfe\xfdV\xfb\xcd\xa9\x12\x97,\xf8\xb2\xe4\x14\xa8P\xafM\xa1L\xf7\x1a$Wr9\x91\xb4\xce\x87|`S\x95+ \xe1\xd2\x0e\xb8\x93L\xa2\xeb\xa6\x18\x12C\xf5\x0e\xae\xdb\xac\xaeZ\x18\x88\xe3?\x17\xe5cA\x00\xed\xc1\xda\xfb\xc0\xae\x00\x00\x15\xff\x01\x00\x01\x00\x00\v\x00\x02\x01\x00\x00\x13\x00\x01\x02\x00\x14\x00\x01\x02\""
+    73.065 AT read OK    6 "\r\nOK\r\n"
+0000073069:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 118
+    73.078 AT read  +   18 "\r\n+UUSORF: 0,227\r\n"
+Socket 0: handle 0 has 227 bytes pending
+    73.098 AT send      16 "AT+USORF=0,813\r\n"
+    73.133 AT read  +  209 "\r\n+USORF: 0,\"54.174.105.178\",5684,169,\"\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x02\x00\x9c\f\x00\x00\x90\x00\x02\x00\x00\x00\x00\x00\x90\x03\x00\x17A\x04f\x05\xfaB\x04\xd6\xc3h\xb6\xa1\x80\xad\x05\x1dErIWC}\f\xd0\"\xee\xdf\t\xed\xc2\x8d\x0e\x1c\xd5\xba\xb1\x90\xdc\x81avA>X\n\xd7R\xa9\xd8y\xc3\xcbv\xd3\x84\x90\x02XB.\x93\x11XM\xa1\xf6\x04\x03\x00G0E\x02!\x00\xffQ&\xaf\b\x05\xab\xf9\xa2\x8d\xa5\x12)\x17\xac\xdaz\xecAj\x81\xe9\x94\xd81\n!\xe3\xd8\xe6.H\x02 E1 [\xb7{r\vL7\xa3\xfe\xa0NA|xt\xef\xf5?\x8ec\xce\x1d\x89PDYIT\xc4\""
+    73.202 AT read OK    6 "\r\nOK\r\n"
+0000073206:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 169
+    73.903 AT read  +   17 "\r\n+UUSORF: 0,58\r\n"
+Socket 0: handle 0 has 58 bytes pending
+    73.923 AT send      16 "AT+USORF=0,813\r\n"
+    73.948 AT read  +   72 "\r\n+USORF: 0,\"54.174.105.178\",5684,33,\"\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x03\x00\x14\r\x00\x00\b\x00\x03\x00\x00\x00\x00\x00\b\x01@\x00\x02\x04\x03\x00\x00\""
+    73.979 AT read OK    6 "\r\nOK\r\n"
+0000073983:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 33
+    73.992 AT read  +   17 "\r\n+UUSORF: 0,25\r\n"
+Socket 0: handle 0 has 25 bytes pending
+    74.012 AT send      16 "AT+USORF=0,813\r\n"
+    74.027 AT read  +   64 "\r\n+USORF: 0,\"54.174.105.178\",5684,25,\"\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x04\x00\f\x0e\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\""
+    74.055 AT read OK    6 "\r\nOK\r\n"
+0000074059:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 25
+0000074068:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 119
+socketSendTo(0,54.174.105.178,5684,,119)
+    74.082 AT send      38 "AT+USOST=0,\"54.174.105.178\",5684,119\r\n"
+    74.100 AT read  >    3 "\r\n@"
+    74.153 AT send     119 "\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x02\x00j\v\x00\x00^\x00\x02\x00\x00\x00\x00\x00^\x00\x00[0Y0\x13\x06\a*\x86H\xce=\x02\x01\x06\b*\x86H\xce=\x03\x01\a\x03B\x00\x04\xf2\x8dQl\x80.i\xca\\\xa2\xcbu\xadN\xc8\x043\xaa\x1f\x03\xffX\xf6@\x98]\xf7\xa2\x00\xd6\x02\xcf\xd8\xef6\x96)\x1c\xfc\x12\xec&\x19\x9d]-e4\xf9\x85\x9b<\x9e\xd7E\x97\x16\x00^\x13\xf8I\x87)"
+    74.333 AT read  +   17 "\r\n+USOST: 0,119\r\n"
+    74.348 AT read OK    6 "\r\nOK\r\n"
+0000075010:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 91
+socketSendTo(0,54.174.105.178,5684,,91)
+    75.024 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,91\r\n"
+    75.041 AT read  >    3 "\r\n@"
+    75.094 AT send      91 "\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x03\x00N\x10\x00\x00B\x00\x03\x00\x00\x00\x00\x00BA\x04\xe3\xca\xaa\xa2\xad\xda\xeb\t\x84KK\xc6\x0e\xd7m\xa9&\xb9\xe5L/\x82\b\x9b\xc9!\\\x12\xf7\f\xd9\xc3D\x8e\xe93r\x80j\xa7\xfb\xa5&\xb8\x8d3[\xf4\a\xee,=\xd8L\xc7.\xf6\xb6<\xfc0\x1b\xe8\xc0"
+    75.266 AT read  +   16 "\r\n+USOST: 0,91\r\n"
+    75.281 AT read OK    6 "\r\nOK\r\n"
+0000075646:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 99
+socketSendTo(0,54.174.105.178,5684,,99)
+    75.659 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,99\r\n"
+    75.677 AT read  >    3 "\r\n@"
+    75.730 AT send      99 "\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x04\x00V\x0f\x00\x00J\x00\x04\x00\x00\x00\x00\x00J\x04\x03\x00F0D\x02 'm\x99\xafB\x977\xfe\xe9\xa4\x04\x94\x12\x84\xa0\x82A\xbf)\n\xa3nt7\xa2\x1f\x05\xd0\xf0\v\xd2\xc5\x02 0<\x9cN\xc7\xb3\xd2\x1f/\xf5w\xb3\x06\x87j,\x1d\xc1\xf7\x1d\xde\x84'l\xbc;\xc4\x95\x1f\xed\xc3\xe8"
+    75.905 AT read  +   16 "\r\n+USOST: 0,99\r\n"
+    75.920 AT read OK    6 "\r\nOK\r\n"
+0000075924:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 14
+socketSendTo(0,54.174.105.178,5684,,14)
+    75.937 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,14\r\n"
+    75.955 AT read  >    3 "\r\n@"
+    76.008 AT send      14 "\x14\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x05\x00\x01\x01"
+    76.147 AT read  +   16 "\r\n+USOST: 0,14\r\n"
+    76.162 AT read OK    6 "\r\nOK\r\n"
+0000076167:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 53
+socketSendTo(0,54.174.105.178,5684,,53)
+    76.180 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,53\r\n"
+    76.188 AT read  +   18 "\r\n+UUSORD: 0,345\r\n"
+Socket 0: handle 0 has 345 bytes pending
+    76.208 AT read  >    3 "\r\n@"
+    76.261 AT send      53 "\x16\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x00\x00(\x00\x01\x00\x00\x00\x00\x00\x00:m\xddPm\xec\x9by\x01\xae\x80\x12\x84\a\xf0\x02#=\xb4\xc1\xdfo\xf19\xed&\x1e]\xb4pO\xce"
+    76.421 AT read  +   16 "\r\n+USOST: 0,53\r\n"
+    76.436 AT read OK    6 "\r\nOK\r\n"
+    76.450 AT send      16 "AT+USORF=0,813\r\n"
+    76.475 AT read  +  158 "\r\n+USORF: 0,\"54.174.105.178\",5684,118,\"\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x05\x00i\x02\x00\x00]\x00\x01\x00\x00\x00\x00\x00]\xfe\xfdV\xfb\xcd\xa9\x12\x97,\xf8\xb2\xe4\x14\xa8P\xafM\xa1L\xf7\x1a$Wr9\x91\xb4\xce\x87|`S\x95+ \xe1\xd2\x0e\xb8\x93L\xa2\xeb\xa6\x18\x12C\xf5\x0e\xae\xdb\xac\xaeZ\x18\x88\xe3?\x17\xe5cA\x00\xed\xc1\xda\xfb\xc0\xae\x00\x00\x15\xff\x01\x00\x01\x00\x00\v\x00\x02\x01\x00\x00\x13\x00\x01\x02\x00\x14\x00\x01\x02\""
+    76.535 AT read OK    6 "\r\nOK\r\n"
+0000076539:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 118
+    76.548 AT read  +   18 "\r\n+UUSORF: 0,227\r\n"
+Socket 0: handle 0 has 227 bytes pending
+    76.568 AT send      16 "AT+USORF=0,813\r\n"
+    76.603 AT read  +  209 "\r\n+USORF: 0,\"54.174.105.178\",5684,169,\"\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x06\x00\x9c\f\x00\x00\x90\x00\x02\x00\x00\x00\x00\x00\x90\x03\x00\x17A\x04f\x05\xfaB\x04\xd6\xc3h\xb6\xa1\x80\xad\x05\x1dErIWC}\f\xd0\"\xee\xdf\t\xed\xc2\x8d\x0e\x1c\xd5\xba\xb1\x90\xdc\x81avA>X\n\xd7R\xa9\xd8y\xc3\xcbv\xd3\x84\x90\x02XB.\x93\x11XM\xa1\xf6\x04\x03\x00G0E\x02!\x00\xffQ&\xaf\b\x05\xab\xf9\xa2\x8d\xa5\x12)\x17\xac\xdaz\xecAj\x81\xe9\x94\xd81\n!\xe3\xd8\xe6.H\x02 E1 [\xb7{r\vL7\xa3\xfe\xa0NA|xt\xef\xf5?\x8ec\xce\x1d\x89PDYIT\xc4\""
+    76.672 AT read OK    6 "\r\nOK\r\n"
+0000076676:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 169
+    76.685 AT read  +   17 "\r\n+UUSORF: 0,58\r\n"
+Socket 0: handle 0 has 58 bytes pending
+    76.705 AT send      16 "AT+USORF=0,813\r\n"
+    76.730 AT read  +   72 "\r\n+USORF: 0,\"54.174.105.178\",5684,33,\"\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\a\x00\x14\r\x00\x00\b\x00\x03\x00\x00\x00\x00\x00\b\x01@\x00\x02\x04\x03\x00\x00\""
+    76.761 AT read OK    6 "\r\nOK\r\n"
+0000076765:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 33
+    76.774 AT read  +   17 "\r\n+UUSORF: 0,92\r\n"
+Socket 0: handle 0 has 92 bytes pending
+    76.794 AT send      16 "AT+USORF=0,813\r\n"
+    76.809 AT read  +   64 "\r\n+USORF: 0,\"54.174.105.178\",5684,25,\"\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\b\x00\f\x0e\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\""
+    76.837 AT read OK    6 "\r\nOK\r\n"
+0000076841:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 25
+0000076850:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 119
+socketSendTo(0,54.174.105.178,5684,,119)
+    76.864 AT send      38 "AT+USOST=0,\"54.174.105.178\",5684,119\r\n"
+    76.872 AT read  +   17 "\r\n+UUSORF: 0,67\r\n"
+Socket 0: handle 0 has 67 bytes pending
+    76.891 AT read  >    3 "\r\n@"
+    76.944 AT send     119 "\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\x06\x00j\v\x00\x00^\x00\x02\x00\x00\x00\x00\x00^\x00\x00[0Y0\x13\x06\a*\x86H\xce=\x02\x01\x06\b*\x86H\xce=\x03\x01\a\x03B\x00\x04\xf2\x8dQl\x80.i\xca\\\xa2\xcbu\xadN\xc8\x043\xaa\x1f\x03\xffX\xf6@\x98]\xf7\xa2\x00\xd6\x02\xcf\xd8\xef6\x96)\x1c\xfc\x12\xec&\x19\x9d]-e4\xf9\x85\x9b<\x9e\xd7E\x97\x16\x00^\x13\xf8I\x87)"
+    77.124 AT read  +   17 "\r\n+USOST: 0,119\r\n"
+    77.139 AT read OK    6 "\r\nOK\r\n"
+0000077143:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 91
+socketSendTo(0,54.174.105.178,5684,,91)
+    77.156 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,91\r\n"
+    77.174 AT read  >    3 "\r\n@"
+    77.227 AT send      91 "\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\a\x00N\x10\x00\x00B\x00\x03\x00\x00\x00\x00\x00BA\x04\xe3\xca\xaa\xa2\xad\xda\xeb\t\x84KK\xc6\x0e\xd7m\xa9&\xb9\xe5L/\x82\b\x9b\xc9!\\\x12\xf7\f\xd9\xc3D\x8e\xe93r\x80j\xa7\xfb\xa5&\xb8\x8d3[\xf4\a\xee,=\xd8L\xc7.\xf6\xb6<\xfc0\x1b\xe8\xc0"
+    77.399 AT read  +   16 "\r\n+USOST: 0,91\r\n"
+    77.414 AT read OK    6 "\r\nOK\r\n"
+0000077418:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 99
+socketSendTo(0,54.174.105.178,5684,,99)
+    77.431 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,99\r\n"
+    77.449 AT read  >    3 "\r\n@"
+    77.502 AT send      99 "\x16\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\b\x00V\x0f\x00\x00J\x00\x04\x00\x00\x00\x00\x00J\x04\x03\x00F0D\x02 'm\x99\xafB\x977\xfe\xe9\xa4\x04\x94\x12\x84\xa0\x82A\xbf)\n\xa3nt7\xa2\x1f\x05\xd0\xf0\v\xd2\xc5\x02 0<\x9cN\xc7\xb3\xd2\x1f/\xf5w\xb3\x06\x87j,\x1d\xc1\xf7\x1d\xde\x84'l\xbc;\xc4\x95\x1f\xed\xc3\xe8"
+    77.677 AT read  +   16 "\r\n+USOST: 0,99\r\n"
+    77.692 AT read OK    6 "\r\nOK\r\n"
+0000077696:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 14
+socketSendTo(0,54.174.105.178,5684,,14)
+    77.709 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,14\r\n"
+    77.727 AT read  >    3 "\r\n@"
+    77.780 AT send      14 "\x14\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\t\x00\x01\x01"
+    77.928 AT read  +   16 "\r\n+USOST: 0,14\r\n"
+    77.943 AT read OK    6 "\r\nOK\r\n"
+0000077947:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 53
+socketSendTo(0,54.174.105.178,5684,,53)
+    77.960 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,53\r\n"
+    77.978 AT read  >    3 "\r\n@"
+    78.031 AT send      53 "\x16\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x01\x00(\x00\x01\x00\x00\x00\x00\x00\x01\xe5\xa2\xe3j*\xc8\xd4J\x9f\x9d\xf7F\xed\xa7\x87\xe1\nQ\x19\xe0\x18_\xff&\xbd\xb1r\x803\x18\t\x86"
+    78.192 AT read  +   16 "\r\n+USOST: 0,53\r\n"
+    78.207 AT read OK    6 "\r\nOK\r\n"
+    78.221 AT send      16 "AT+USORF=0,813\r\n"
+    78.246 AT read  +   92 "\r\n+USORF: 0,\"54.174.105.178\",5684,53,\"\x16\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x00\x00(\x00\x01\x00\x00\x00\x00\x00\x00p\xd2W\\\n@-\xebx\xd3L@\xac\xa5z\xf2Q\xce-q\x84\x97\xe8v\xa6n\xcb\x05\a\xfb>{\""
+    78.280 AT read OK    6 "\r\nOK\r\n"
+0000078284:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 53
+lib/mbedtls/library/ssl_tls.c:3698: record from another epoch: expected 0, received 1
+    78.302 AT read  +   17 "\r\n+UUSORF: 0,14\r\n"
+Socket 0: handle 0 has 14 bytes pending
+    78.322 AT send      16 "AT+USORF=0,813\r\n"
+    78.337 AT read  +   53 "\r\n+USORF: 0,\"54.174.105.178\",5684,14,\"\x14\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\t\x00\x01\x01\""
+    78.361 AT read OK    6 "\r\nOK\r\n"
+0000078365:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 14
+0000078375:DEBUG: particle::protocol::ProtocolError particle::protocol::CoAPMessageStore::send_synchronous(particle::pr...sending message id  synchronously
+0000078391:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 29
+4002000db168ff000a00020000000a000c410033000b51343136333035
+0000078412:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 58
+socketSendTo(0,54.174.105.178,5684,,58)
+    78.425 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,58\r\n"
+    78.433 AT read  +   17 "\r\n+UUSORD: 0,67\r\n"
+Socket 0: handle 0 has 67 bytes pending
+    78.453 AT read  >    3 "\r\n@"
+    78.506 AT send      58 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x02\x00-\x00\x01\x00\x00\x00\x00\x00\x02*Ad\xc2\xa3\x1a\xa1\x14\xda\xf6o\x99i\xe6\\\xde\x81P\x04\x83\x8b\xc8\xcf\x98\xfc'7\xd7\xfd\xa8=\x06P\xa8\xf6\xf7\x19"
+    78.669 AT read  +   16 "\r\n+USOST: 0,58\r\n"
+    78.684 AT read OK    6 "\r\nOK\r\n"
+    78.698 AT send      16 "AT+USORF=0,813\r\n"
+    78.713 AT read  +   53 "\r\n+USORF: 0,\"54.174.105.178\",5684,14,\"\x14\xfe\xfd\x00\x00\x00\x00\x00\x00\x00\n\x00\x01\x01\""
+    78.737 AT read OK    6 "\r\nOK\r\n"
+0000078741:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 14
+lib/mbedtls/library/ssl_tls.c:3655: dropping unexpected ChangeCipherSpec
+lib/mbedtls/library/ssl_tls.c:3955: discarding invalid record (header)
+    78.765 AT read  +   17 "\r\n+UUSORF: 0,53\r\n"
+Socket 0: handle 0 has 53 bytes pending
+    78.785 AT send      16 "AT+USORF=0,813\r\n"
+    78.810 AT read  +   92 "\r\n+USORF: 0,\"54.174.105.178\",5684,53,\"\x16\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x01\x00(\x00\x01\x00\x00\x00\x00\x00\x01\xea\xd0\x1c\xa2hErY\xd45\b\xe4\xae\x83*m\x9b\xc4\xf8h\xf5k\xb0\xab\xce(FGg\xb9\x8ew\""
+    78.845 AT read OK    6 "\r\nOK\r\n"
+0000078849:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 53
+lib/mbedtls/library/ssl_tls.c:6983: bad application data message
+    78.895 AT read  +   17 "\r\n+UUSORD: 0,33\r\n"
+Socket 0: handle 0 has 33 bytes pending
+    78.914 AT send      16 "AT+USORF=0,813\r\n"
+    78.939 AT read  +   72 "\r\n+USORF: 0,\"54.174.105.178\",5684,33,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x02\x00\x14\x00\x01\x00\x00\x00\x00\x00\x02\x95\x1b\xfb`\x87V\x17\xce,\x8e\xed\xdd\""
+    78.970 AT read OK    6 "\r\nOK\r\n"
+0000078974:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 33
+0000078983:DEBUG: particle::protocol::ProtocolError particle::protocol::CoAPMessageStore::receive(particle::protocol::M...recieved ACK for message d
+0000078998:INFO : int particle::protocol::Protocol::begin() (245):Hanshake: completed
+0000079007:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 40
+4002000eb1450d0c737061726b2f68617264776172652f6d61785f62696e617279ff313331303732
+0000079030:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 69
+socketSendTo(0,54.174.105.178,5684,,69)
+    79.044 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,69\r\n"
+    79.062 AT read  >    3 "\r\n@"
+    79.115 AT send      69 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x03\x008\x00\x01\x00\x00\x00\x00\x00\x03\xd6\x8a HWu^\x8d\x8cn\x9f=Kv}u\x1f\x1f\x1d\x11i\xfak\x04\xc3\x84\x19\x1ed\v~Rv\x00\xa3K\xfbTVL\xee-W`\xa0\xcc\x1a\xa4"
+    79.279 AT read  +   16 "\r\n+USOST: 0,69\r\n"
+    79.294 AT read OK    6 "\r\nOK\r\n"
+0000079298:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 12
+4001000fb16505737061726b
+0000079315:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 41
+socketSendTo(0,54.174.105.178,5684,,41)
+    79.328 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,41\r\n"
+    79.346 AT read  >    3 "\r\n@"
+    79.399 AT send      41 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x04\x00\x1c\x00\x01\x00\x00\x00\x00\x00\x04Xwy\xc0\xd5\xb1J\xf3\x9e\x8aW\xe0(lN\\\xae\x0f\xdar"
+    79.556 AT read  +   16 "\r\n+USOST: 0,41\r\n"
+    79.571 AT read OK    6 "\r\nOK\r\n"
+0000079575:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 7
+4101001037b174
+0000079591:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 36
+socketSendTo(0,54.174.105.178,5684,,36)
+    79.604 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,36\r\n"
+    79.612 AT read  +   17 "\r\n+UUSORD: 0,33\r\n"
+Socket 0: handle 0 has 33 bytes pending
+    79.632 AT read  >    3 "\r\n@"
+    79.685 AT send      36 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x05\x00\x17\x00\x01\x00\x00\x00\x00\x00\x05J$6\xf4\x82`^8\xe6\xae\x15\xff\x99\x94\b"
+    79.841 AT read  +   16 "\r\n+USOST: 0,36\r\n"
+    79.856 AT read OK    6 "\r\nOK\r\n"
+    79.870 AT send      16 "AT+USORF=0,813\r\n"
+    79.895 AT read  +   72 "\r\n+USORF: 0,\"54.174.105.178\",5684,33,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x03\x00\x14\x00\x01\x00\x00\x00\x00\x00\x03\xe8*\xd6F\x8a8q2vB\x00G\""
+    79.924 AT read OK    6 "\r\nOK\r\n"
+0000079928:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 33
+0000079937:DEBUG: particle::protocol::ProtocolError particle::protocol::CoAPMessageStore::receive(particle::protocol::M...recieved ACK for message e
+0000079952:INFO : void handle_cloud_connection(bool) (281):Cloud connected
+    79.960 AT read  +   17 "\r\n+UUSORF: 0,33\r\n"
+Socket 0: handle 0 has 33 bytes pending
+    79.980 AT send      16 "AT+USORF=0,813\r\n"
+    80.005 AT read  +   72 "\r\n+USORF: 0,\"54.174.105.178\",5684,33,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x04\x00\x14\x00\x01\x00\x00\x00\x00\x00\x04\x8f\x91R\x95\x0ef3\a\xb4\x9fw\xde\""
+    80.035 AT read OK    6 "\r\nOK\r\n"
+0000080039:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 33
+0000080048:DEBUG: particle::protocol::ProtocolError particle::protocol::CoAPMessageStore::receive(particle::protocol::M...recieved ACK for message f
+    80.066 AT read  +   17 "\r\n+UUSORD: 0,39\r\n"
+Socket 0: handle 0 has 39 bytes pending
+    80.085 AT send      16 "AT+USORF=0,813\r\n"
+    80.110 AT read  +   78 "\r\n+USORF: 0,\"54.174.105.178\",5684,39,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x05\x00\x1a\x00\x01\x00\x00\x00\x00\x00\x057ZL\x9e\xecU\xe7\x03/\xcd6\x11\xa6\t=t\x11,\""
+    80.141 AT read OK    6 "\r\nOK\r\n"
+0000080145:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 39
+0000080154:DEBUG: particle::protocol::ProtocolError particle::protocol::CoAPMessageStore::receive(particle::protocol::M...recieved ACK for message 10
+    80.172 AT read  +   17 "\r\n+UUSORD: 0,38\r\n"
+Socket 0: handle 0 has 38 bytes pending
+    80.192 AT send      16 "AT+USORF=0,813\r\n"
+    80.217 AT read  +   77 "\r\n+USORF: 0,\"54.174.105.178\",5684,38,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x06\x00\x19\x00\x01\x00\x00\x00\x00\x00\x06\xac/`\xf88x\xccgR\xcb\xf3\x96\xcb\x8f2\xdb+\""
+    80.248 AT read OK    6 "\r\nOK\r\n"
+0000080252:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 38
+0000080261:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 76
+6145262701ff7b2266223a5b226469676974616c72656164222c226469676974616c7772697465222c22616e616c6f6772656164222c22616e616c6f677772697465225d2c2276223a7b7d7d
+0000080292:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 105
+socketSendTo(0,54.174.105.178,5684,,105)
+    80.306 AT send      38 "AT+USOST=0,\"54.174.105.178\",5684,105\r\n"
+    80.324 AT read  >    3 "\r\n@"
+    80.377 AT send     105 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\x06\x00\\\x00\x01\x00\x00\x00\x00\x00\x06\xe1\xdcb\xa9W|\x99\x82eWb\xbaN\xdb\xa3Y\xb7\x86^\xf0\x9a\x02+\xc6@s\xc5\x9e\xea\x02\xfcA\xdbap\xaa72p1\xad\xd4TD\a\x98X\xc9\x84\xdd\xb7\t\xc4q\x0f\xc6\xa6w?\x01\x91\xe9\xd3B\xf9\xdeKDL)\xa7y\xff\xb6\xf7\xee?y\rpP\xf0\xe71"
+    80.552 AT read  +   17 "\r\n+USOST: 0,105\r\n"
+    80.567 AT read OK    6 "\r\nOK\r\n"
+    80.796 AT read  +   17 "\r\n+UUSORD: 0,38\r\n"
+Socket 0: handle 0 has 38 bytes pending
+    80.815 AT send      16 "AT+USORF=0,813\r\n"
+    80.840 AT read  +   77 "\r\n+USORF: 0,\"54.174.105.178\",5684,38,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\a\x00\x19\x00\x01\x00\x00\x00\x00\x00\a\xeei\xfb\xdfY\xe6\x8c\xe6\xbb\xd1\xbeK4\xaf6o\xc9\""
+    80.871 AT read OK    6 "\r\nOK\r\n"
+0000080875:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 38
+0000080893:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 585
+6145262802ff7b2266223a5b226469676974616c72656164222c226469676974616c7772697465222c22616e616c6f6772656164222c22616e616c6f677772697465225d2c2276223a7b7d2c2270223a31302c22696d6569223a22333532323533303631313732333538222c226963636964223a2238393636303035313135393034383638363134222c226d223a5b7b2273223a31363338342c226c223a226d222c227663223a33302c227676223a33302c2266223a2262222c226e223a2230222c2276223a362c2264223a5b5d7d2c7b2273223a3133313037322c226c223a226d222c227663223a33302c227676223a33302c2266223a2273222c226e223a2231222c2276223a31302c2264223a5b5d7d2c7b2273223a3133313037322c226c223a226d222c227663223a33302c227676223a33302c2266223a2273222c226e223a2232222c2276223a31302c2264223a5b7b2266223a2273222c226e223a2231222c2276223a31302c225f223a22227d5d7d2c7b2273223a3133313037322c226c223a226d222c227663223a33302c227676223a33302c2275223a2246383537353534373938363936393032433646413943463943424241333739433545324535373941414141463444304430444533343846443345373642433032222c2266223a2275222c226e223a2231222c2276223a332c2264223a5b7b2266223a2273222c226e223a2232222c2276223a31302c225f223a22227d5d7d2c7b2273223a3133313037322c226c223a2266222c227663223a33302c227676223a302c2264223a5b5d7d5d7d
+0000081032:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 614
+socketSendTo(0,54.174.105.178,5684,,614)
+    81.046 AT send      38 "AT+USOST=0,\"54.174.105.178\",5684,614\r\n"
+    81.064 AT read  >    3 "\r\n@"
+    81.117 AT send     614 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\a\x02Y\x00\x01\x00\x00\x00\x00\x00\a\xca\xdcNO\xa3\x94F\\\x91#mz\xe7#\x84Q\x81`\x17\xb105\xae\xe5\x82f\xf2*\b\xea\xe7\xe8B1\xbb\b\x15\x85\xbfDKQ\x00\x9aA\xb8 \xc9\x0f\x82\x1eBd\xb9[;\xd7r\xb3\x1b\xcd\aD\xe4\xeb\xd8u\xa1\x92_L\xfe\xb6\x8a\xbd(I\x98\xb9z\xcc\xa1\x9e\xe3\x9e\xaf\xbd\xf6\x86\x8a\x17;\xa9\xbco\x12j\xc7\xb9\xbd\x99\xa80\x93\xd6\xd3P\x93\xa9\xc1\xfa\xcbm\xe8\x82ow\vpN\x90\x9aMqT\a9f^\xc7\xa4\xe0\xce\x91\xd1n\xfd\r\xcf\x80b\x11QiR\xd8\x12\xa4\xb8\x000\xb59g\x19\xd5'\x93 \xc5\xd3\xc4\x83 g\xe6\x19\xe0o\xc5\xc4\x98\xd59\xd3\x17V\xff\xa4\f\x8e\xb8k4\t\x8e2d\xd2\x97\x19t\"\xfc\xe07BHII%\x81\xaaI\x8bq\xba3\xc6\xad\xcf\xb1\\\xff\x02\xf9\x99\x9c+@?\xf9yOV\xbd\xf1\xa2\xeb\x83\x1d\xdb\xad}\xec(Ol\x1a\xfe\x11\x18*\xbb\x9e\x19o\xa2\xdd\x05K\xf0Z\xac7\xf3\x98\xbc\xfb\xf9|\xdcm5\xe2O\n\xe6\xa6\x04==|\xef\xc4\xad2\x98\x96\xc6\xaa\x1f\x8c16\xb5\xaaE_\xf9\x9cE\xbaC\xa2\x8c\xdf\xe0q\xb1e)\x95\x80/\xf1\xd0\x1e\x0f.T\xe2\xc7\xc4d~x\x9c8\x19W\r\x8f'\x88\xfa#P\x11n\xd9s\xb8=\xeaB\xc06\xecJ\x16\xb7Q\x05\x91\x8d\x86\xa4\xf3E\x99\x8c\xab\x99\b)G'=\xb4l\xce\x9cy\xc8\x9a\xb2\x97G\xc6/\xb5\x1f\x93\xfc}\x96)\xc5\xf6\vX\x0e\x87\xd1Y,C\xa6\v\xa1\xc2\xfb`s;d\xbf\x92C\xb5\x90-2\x16N?\xc4 \x8d\xf0~\xf4-Fo\xfd\"\xf2\n\xe6DB^\x8e\xd5O\xe9\xcd%\x96\xa1$\xc8%\xc7\xba\xf0n\xd1+\n[\x9e\x8c\x92\xb2V\xc3tGb\x1db\xfd-\xe1C\x8f\xd9\x94H\xae\x94{\xc4\x80\x912\x02\xb9\x8c5\xea\xa5\x85G\x14\xb64\x1a\xc9\xc9c\x8c\xd9_\"\xd8\xa4\xb4\x9f\xe5\xa6`\xdd\xe10\x9e,\f\xca?i\xa1\x00\xb6\x9eZ\f\xf9\x1e\xd3t\x10\xee\x84\xab\xaa\x93\xf1\f\xedZ9q\x116\xbd\xd3\xf1 \xb1\xfb\x88\x0e\x7f\xdf!y~\xbb\xb2\xb4\xb2\x11\xe3\xfd\xa6\xcd\xae\xd0+tM\xebi\xf5{\x19\\0b\xc8\xb2;1\xb6\x96\xd3\x14\xa2\x86\x8ef-N\xcfT\x03}\xa1\x15\"*\x84\xdc\x95\xd6\xe7TIe"
+    81.494 AT read  +   17 "\r\n+USOST: 0,614\r\n"
+    81.509 AT read OK    6 "\r\nOK\r\n"
+   140.883 AT read  +   17 "\r\n+UUSORD: 0,57\r\n"
+Socket 0: handle 0 has 57 bytes pending
+   140.902 AT send      16 "AT+USORF=0,813\r\n"
+   143.427 AT read  +   96 "\r\n+USORF: 0,\"54.174.105.178\",5684,57,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\b\x00,\x00\x01\x00\x00\x00\x00\x00\bV\x8c~\xdd\xae\x1e\xfbt\x8c\xc0_\xd1I|\v\x85|\x00\x94\x92\xe0E\x90\x1e#'m\xdf|yF\x125\xb86(\""
+   143.462 AT read OK    6 "\r\nOK\r\n"
+0000143466:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 57
+0000143475:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 4
+60002629
+0000143491:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 33
+socketSendTo(0,54.174.105.178,5684,,33)
+   143.504 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,33\r\n"
+   143.522 AT read  >    3 "\r\n@"
+   143.575 AT send      33 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\b\x00\x14\x00\x01\x00\x00\x00\x00\x00\b\xf2L\xdd4x\x06\x8c\xe0\x01\xc5[\x1d"
+   143.730 AT read  +   16 "\r\n+USOST: 0,33\r\n"
+   143.745 AT read OK    6 "\r\nOK\r\n"
+0000143749:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 10
+4144001103ff00000001
+0000143765:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 39
+socketSendTo(0,54.174.105.178,5684,,39)
+   143.779 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,39\r\n"
+   143.797 AT read  >    3 "\r\n@"
+   143.850 AT send      39 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\t\x00\x1a\x00\x01\x00\x00\x00\x00\x00\t\x84\xea\xaf\xfb\x89\xbf\xe3(Wb\x81\xb4\xc6ZH\xe0qN"
+   144.006 AT read  +   16 "\r\n+USOST: 0,39\r\n"
+   144.021 AT read OK    6 "\r\nOK\r\n"
+   144.392 AT read  +   17 "\r\n+UUSORD: 0,34\r\n"
+Socket 0: handle 0 has 34 bytes pending
+   144.411 AT send      16 "AT+USORF=0,813\r\n"
+   144.436 AT read  +   73 "\r\n+USORF: 0,\"54.174.105.178\",5684,34,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\t\x00\x15\x00\x01\x00\x00\x00\x00\x00\tA8\xdc$ip+Md\n\xc1\\\xb0\""
+   144.465 AT read OK    6 "\r\nOK\r\n"
+0000144469:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 34
+0000144478:DEBUG: particle::protocol::ProtocolError particle::protocol::CoAPMessageStore::receive(particle::protocol::M...recieved ACK for message 11
+   166.619 AT read  +   17 "\r\n+UUSORD: 0,56\r\n"
+Socket 0: handle 0 has 56 bytes pending
+   166.638 AT send      16 "AT+USORF=0,813\r\n"
+   169.013 AT read  +   95 "\r\n+USORF: 0,\"54.174.105.178\",5684,56,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\n\x00+\x00\x01\x00\x00\x00\x00\x00\n\xc3>\xfcQYV\xc7\xdbF\xfa\x90\xa6\xb0\x97\xd2\x17\xb5\xdf!\xa5\xf8cN\xab\x94u<\x97\xf8\xa5Ot{5\x03\""
+   169.049 AT read OK    6 "\r\nOK\r\n"
+0000169053:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 56
+0000169062:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 4
+6000262a
+0000169078:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 33
+socketSendTo(0,54.174.105.178,5684,,33)
+   169.091 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,33\r\n"
+   169.109 AT read  >    3 "\r\n@"
+   169.162 AT send      33 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\n\x00\x14\x00\x01\x00\x00\x00\x00\x00\n\xd1 \x00\x97j\xe6\xef\f\xb9\x18\t\x00"
+   169.317 AT read  +   16 "\r\n+USOST: 0,33\r\n"
+   169.332 AT read OK    6 "\r\nOK\r\n"
+0000169336:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 10
+4144001204ff00000001
+0000169352:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 39
+socketSendTo(0,54.174.105.178,5684,,39)
+   169.366 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,39\r\n"
+   169.384 AT read  >    3 "\r\n@"
+   169.437 AT send      39 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\v\x00\x1a\x00\x01\x00\x00\x00\x00\x00\vd\x83\x93S\xd5\xa5\xb31>)\x80\x88@\xfeH\x9e\xc4\xc7"
+   169.593 AT read  +   16 "\r\n+USOST: 0,39\r\n"
+   169.608 AT read OK    6 "\r\nOK\r\n"
+   170.050 AT read  +   17 "\r\n+UUSORD: 0,34\r\n"
+Socket 0: handle 0 has 34 bytes pending
+   170.069 AT send      16 "AT+USORF=0,813\r\n"
+   170.094 AT read  +   73 "\r\n+USORF: 0,\"54.174.105.178\",5684,34,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\v\x00\x15\x00\x01\x00\x00\x00\x00\x00\vU>\xbe\xe9\xb4\x1a\x1f6\x94\x96\x98+\x84\""
+   170.124 AT read OK    6 "\r\nOK\r\n"
+0000170128:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 34
+0000170137:DEBUG: particle::protocol::ProtocolError particle::protocol::CoAPMessageStore::receive(particle::protocol::M...recieved ACK for message 12
+   183.104 AT read  +   17 "\r\n+UUSORD: 0,57\r\n"
+Socket 0: handle 0 has 57 bytes pending
+   183.123 AT send      16 "AT+USORF=0,813\r\n"
+   185.648 AT read  +   96 "\r\n+USORF: 0,\"54.174.105.178\",5684,57,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\f\x00,\x00\x01\x00\x00\x00\x00\x00\f\xa5\xc7\xc7\x80z\x9bE\xfa\xfa\x91\xa9\x81\x9cY#A\x01\x10\x8e\xb8i\xe7\xcb\xa9\x80\x03\xc3\xb0\xce\xe2~\x83r\xd3\x93f\""
+   185.686 AT read OK    6 "\r\nOK\r\n"
+0000185690:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 57
+0000185699:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 4
+6000262b
+0000185715:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 33
+socketSendTo(0,54.174.105.178,5684,,33)
+   185.728 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,33\r\n"
+   185.746 AT read  >    3 "\r\n@"
+   185.799 AT send      33 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\f\x00\x14\x00\x01\x00\x00\x00\x00\x00\f\x9c\xa5\xd7f\xa2\xad\xdb&\x98|l\xad"
+   185.954 AT read  +   16 "\r\n+USOST: 0,33\r\n"
+   185.969 AT read OK    6 "\r\nOK\r\n"
+0000185973:DEBUG: virtual particle::protocol::ProtocolError particle::protocol::DTLSMessageChannel::send(particle::prot...message length 10
+4144001305ff00000001
+0000185989:DEBUG: int Spark_Send_UDP(const unsigned char*, uint32_t, void*) (267):send 39
+socketSendTo(0,54.174.105.178,5684,,39)
+   186.003 AT send      37 "AT+USOST=0,\"54.174.105.178\",5684,39\r\n"
+   186.021 AT read  >    3 "\r\n@"
+   186.074 AT send      39 "\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\r\x00\x1a\x00\x01\x00\x00\x00\x00\x00\rF\xf3\xbc\x17'\xf0 $O\xe5\xe1S^\x19d\xf7\x91\xa4"
+   186.230 AT read  +   16 "\r\n+USOST: 0,39\r\n"
+   186.245 AT read OK    6 "\r\nOK\r\n"
+   186.606 AT read  +   17 "\r\n+UUSORD: 0,34\r\n"
+Socket 0: handle 0 has 34 bytes pending
+   186.625 AT send      16 "AT+USORF=0,813\r\n"
+   186.650 AT read  +   73 "\r\n+USORF: 0,\"54.174.105.178\",5684,34,\"\x17\xfe\xfd\x00\x01\x00\x00\x00\x00\x00\r\x00\x15\x00\x01\x00\x00\x00\x00\x00\r\x97\x81\xb1\xd4\xc5\xb1\xcef\x92\xf6\xa3\nX\""
+   186.681 AT read OK    6 "\r\nOK\r\n"
+0000186685:DEBUG: int Spark_Receive_UDP(unsigned char*, uint32_t, void*) (285):received 34
+0000186694:DEBUG: particle::protocol::ProtocolError particle::protocol::CoAPMessageStore::receive(particle::protocol::M...recieved ACK for message 13
+   490.807 AT read  +   14 "\r\n+CIEV: 2,4\r\n"
+   493.370 AT read  +   14 "\r\n+CIEV: 2,3\r\n"
+   603.464 AT read  +   14 "\r\n+CIEV: 2,4\r\n"
+   644.428 AT read  +   14 "\r\n+CIEV: 2,3\r\n"
+   687.949 AT read  +   14 "\r\n+CIEV: 2,4\r\n"
+   695.626 AT read  +   14 "\r\n+CIEV: 2,3\r\n"
+   851.794 AT read  +   14 "\r\n+CIEV: 2,4\r\n"
+Jakks-MacBook-Air:Downloads jakkrit$ 

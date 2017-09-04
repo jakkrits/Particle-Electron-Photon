@@ -1,0 +1,141 @@
+Press ENTER
+Press ENTER
+Running in SEMI_AUTOMATIC mode, cellular modem is OFF at boot,
+not connected to the cellular network or cloud.
+System RGB LED will typically stay White, until connecting to cloud.
+Connect a serial to USB adapter on the TX pin to see debugging output.
+Suggested workflow: o, d, r, p, P, p, C, s, s, z
+
+Press a key to run a command:
+[o] turn the cellular modem ON
+[d|D] cellular data connection (Particle SIM|3rd Party SIM)
+[n] scan the cellular network for operators
+[r] get the RSSI and QUAL values
+[P|p] send ping to www.bing.com|Google DNS 8.8.8.8
+[C|c] to connect|disconnect the cloud
+[s] publish a "b" event name and "count++" data
+[i] read the SIM ICCID
+[z] turn off the cellular modem, and go to deep sleep
+[K|k] enable|disable Serial1 debugging loopback
+[h] show this help menu
+
+Turning on the modem: OK!
+Getting signal strength: RSSI: -71dBm, QUAL: 25dB, BARS: 3
+Get the SIM card ID (ICCID): 8966051403461622548
+
+Scanning for available networks, could take up to 3 minutes...
+
+
+[ AT+COPN ]
++COPN: "363020","DIGICEL"
++COPN: "363001","SETAR GSM"
++COPN: "412001","AF AWCC"
++COPN: "412050","Etisalat Af"
++COPN: "412040","MTN AF"
++COPN: "412020","ROSHAN"
++COPN: "631002","UNITEL"
++COPN: "365840","LIME"
++COPN: "276001","AMC - AL"
++COPN: "276003","EAGLE AL"
++COPN: "276004","PLUS AL"
++COPN: "276002","Vodafone AL"
++COPN: "213003","MOBILAND"
++COPN: "362069","ANT CURACAO TELECOM GSM"
++COPN: "362091","ANT"
++COPN: "362051","Telcell GSM"
++COPN: "424003","du"
++COPN: "424002","ETISALAT"
++COPN: "722310","CLARO ARGENTINA"
++COPN: "722341","AR PERSONAL"
++COPN: "722010","Movistar"
++COPN: "722007","Movistar"
++COPN: "283001","Beeline AM"
++COPN: "283005","MTS ARM"
++COPN: "283010","Orange AM"
++COPN: "544110","Bluesky Communications"
++COPN: "344030","APUA imobile"
++COPN: "344930","Cingular"
++COPN: "344920","LIME"
++COPN: "505002","YES OPTUS"
++COPN: "505001","Telstra Mobile"
++COPN: "505006","3TELSTRA"
++COPN: "505003","vodafone AU"
++COPN: "232001","A1"
++COPN: "232012","A1"
++COPN:RT"
++COPN: "642003","ONATE
+
++COPN: "218003","HT ERONET"
+
+,"LIME"
+
++COPN: "342750","
+
++COPN: "302220","TELUS"
+02","CELTEL DRC"
+
++COPN: "010","MTN"
++COPN: "2300COPN: "740001","CLARO"
++COP5","Free"
++COPN: "340001",""PMN UK"
++COPN: "234015","03","GNQ-Muni"
++COPN: "202001"one HK"
++COPN: "708030","HN
+
++COPN: "405803","Aircel"
+
++COPN: "404038IND airtel"
++COPN: "40+COPN: "404024","IDEA"
++COPN: op"
++COPN: "405874"," "405005","Reliance"
++COPN:O"
++COPN: "405027","TATA DOCOMO"
+VIDEOCON"
+
++COPN: "405836","VID05","Vodafone IN"
++COPN: "4ge IL"
++COPN: "425003","IL 9","O!"
++COPN: "437001","BeelSM"
++COPN: "618001","LBR L"455000","SmarTone MAC"
++COP
++COPN: "297002","Telekom.me"
++COPN: "297NER"
++COPN: "505010","Norfolk T3","PK-UFONE"
++COPN: "41000 "330110","PR Claro"
++C9","RUS INDIGO"
++COPN: "25003","SEN expresso"
++COPN: "633010"COPN: "413002","SRI DIALOG"
+
+PN: "633001","C&W SEY"
+
++COPN: COPN: "438001","MTS TM"
++COPN: "31
++COPN: "310210","T-Mobile"
++COPN: ""LIME"
++COPN: "3600002","TelkomSA"
+[ AT+COPS=? ]
++COPN: "655001","VodaCom
++COPS: (1,"dtac TriNet","dtac","52005",2),(1,"AIS 3G","AIS 3G","52003",2),(1,"TOT3G","TOT3G","52015",2),(1,"TRUE 3G+","TRUE 3G+","52004",2),(1,"TH GSM","TH GSM","52001",0),(1,"TRUE","TRUE","52099",0),(1,"TH-DTAC","DTAC","52018",0),,(0-5),(0-2)
+
+[ AT+COPS=5 ]
+
+Scan incomplete! Power cycle the modem and try again.
+Turning on the modem: OK!
+Getting signal strength: RSSI: -71dBm, QUAL: 25dB, BARS: 3
+Publishing the "b" event name with count "1" data. Look in your dashboard.particle.io logs: ERROR!
+Could not publish. Is the Electron breathing CYAN? Type [C] to connect to the cloud.
+Get the SIM card ID (ICCID): 8966051403461622548
+
+You will be prompted to enter your APN, USERNAME and PASSWORD.
+Most 3rd-Party SIMs don't require USERNAME and PASSWORD so just
+press ENTER on those to set them as empty values.
+Pressing ENTER on all 3 will restore Particle's APN.
+
+APN: www.dtac.co.th
+USERNAME: 
+
+PASSWORD: 
+
+
+Credentials Set!
+Connecting to the cellular network with 3rd-Party APN: 
